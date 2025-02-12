@@ -1,0 +1,20 @@
+.container {
+  width: 100%; /* Ocupa el 100% del ancho */
+}
+
+main {
+  width: 100%;
+  min-height: calc(100vh - 120px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: rgb(255, 230, 50);
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 10px; /* Reduce el padding en móviles */
+  }
+}
