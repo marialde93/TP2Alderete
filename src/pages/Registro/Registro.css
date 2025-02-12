@@ -2,14 +2,15 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
-  width: 400px;
+  width: 100%; /* Ocupa todo el ancho en móviles */
+  max-width: 400px; /* Limita el ancho en pantallas grandes */
   margin: 0 auto;
   padding: 20px;
   border: 1px solid #5a5959;
   border-radius: 10px;
   background-color: #333;
-  margin-top: 45px;
-  margin-bottom: 30px;
+  margin-top: 20px; /* Reduce el margen superior */
+  margin-bottom: 20px; /* Reduce el margen inferior */
 }
 
 .form-registro label {
@@ -42,5 +43,28 @@
 
 h1 {
   color: rgb(255, 230, 50);
-  padding: 10px 30px;
+  padding: 10px 20px; /* Reduce el padding */
+  text-align: center; /* Centra el título */
+}
+
+/* Estilos para móviles */
+@media (max-width: 768px) {
+  .form-registro {
+    padding: 15px; /* Reduce el padding */
+  }
+
+  .form-registro input {
+    padding: 8px; /* Reduce el padding */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+  }
+
+  .form-registro button {
+    padding: 8px 12px; /* Reduce el padding */
+    font-size: 0.9rem; /* Reduce el tamaño de la fuente */
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del título */
+    padding: 10px; /* Reduce el padding */
+  }
 }
